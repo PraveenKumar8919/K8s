@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name:label-demo
+  labels:
+    course: DevOps
+    Traniner: "Praveen"
+  annotations:
+    com.training.duration: "120 hours"
+    jenkins.url: "https://jenkins.com/robohshop/catalogue#45"
+spec:
+  #list of container
+  container:
+  - name: hello-pod
+    image: nginx
+    ports:
+    - containerPort: 80
