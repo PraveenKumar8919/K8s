@@ -6,7 +6,7 @@ metadata:
     app: service-pod
     env: dev
 spec:
-  container:
+  containers:
   - name: Test-servicePOd
     image: nginx
     ports:
